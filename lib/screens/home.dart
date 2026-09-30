@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           menu.name,
                           style: const TextStyle(fontWeight: FontWeight.w500),
                         ),
-                        subtitle: Text("Rp ${menu.price}"),
+                        subtitle: Text("${menu.price}"),
                         trailing: const Icon(
                           Icons.chevron_right,
                           color: Colors.grey,
