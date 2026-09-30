@@ -51,6 +51,15 @@ class _HomeScreenState extends State<HomeScreen> {
               decoration: InputDecoration(
                 hintText: "Cari Menu Gacoan Favoritemu...",
                 prefixIcon: const Icon(Icons.search, color: Colors.purple),
+                suffixIcon: _searchController.text.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear, color: Colors.grey),
+                        onPressed: () {
+                          _searchController.clear();
+                          _filterMenu('');
+                        },
+                      )
+                    : null,
                 contentPadding: const EdgeInsets.symmetric(
                   horizontal: 20,
                   vertical: 10,
