@@ -16,7 +16,6 @@ class _MyWidgetState extends State<Root> {
 
   @override
   Widget build(BuildContext context) {
-    // Meneruskan widget.username ke ProfileScreen agar tidak hardcode
     List<Widget> screens = [
       const HomeScreen(),
       ProfileScreen(username: widget.username),

@@ -1,7 +1,6 @@
 import 'package:latihan_kuis/root.dart';
 import 'package:flutter/material.dart';
 
-// Widget Class
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -9,13 +8,12 @@ class LoginScreen extends StatefulWidget {
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
-// State Class
 class _LoginScreenState extends State<LoginScreen> {
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
 
   void _login({required String username, required String password}) {
-    // Validasi jika input kosong
+    // buat validasi kalau salah input
     if (username.isEmpty || password.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -26,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
       return;
     }
 
-    // Login Berhasil (Meneruskan username ke Root)
+    // login ready berhasil, lanjut ke root
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         backgroundColor: Colors.green,
@@ -86,7 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
 
-                // Input Password
+                // masukkan password
                 TextField(
                   controller: _passwordController,
                   obscureText: true,
@@ -108,7 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 10),
 
-                // Tombol Login
+                // buttom login
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.5,
                   height: 40,

@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: _filteredMenus.isEmpty
                 ? const Center(
                     child: Text(
-                      "Menu yang Kamu Cari Gak Ada, Maaf :)",
+                      "Menu yang Kamu Cari Gak Ada, Maaf yaa :)",
                       style: TextStyle(color: Colors.grey),
                     ),
                   )
