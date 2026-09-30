@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 Image.asset(
                   "assets/logo_gacoan.png",
-                  height: 120,
+                  height: 350,
                   fit: BoxFit.contain,
                 ),
                 const Text(
